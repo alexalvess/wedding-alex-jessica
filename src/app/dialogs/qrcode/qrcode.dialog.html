@@ -1,0 +1,7 @@
+<div class="qrcode-dialog">
+    <h3>{{dialogRef.data.product}}</h3>
+
+    <div @if="showQrCode"><img [src]="qrcode"/></div>
+
+    <p>Valor: R$ {{dialogRef.data.price}}</p>
+</div>

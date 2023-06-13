@@ -1,4 +1,6 @@
+import { DialogBuilder } from '@nimble-ts/core';
 import { Page, PreparePage } from '@nimble-ts/core/page';
+import { QrCodeDialog } from 'src/app/dialogs/qrcode/qrcode.dialog';
 import db from '../../../db.json';
 
 @PreparePage({
@@ -10,13 +12,19 @@ export class FirstPage extends Page {
 
 	public items = [];
 
-    constructor() {
+    constructor(private dialog: DialogBuilder) {
         super();
 	}
 
 	onInit(): void {
 		db.gifts.forEach(element => {
 			this.items.push(...element.products);
+		});
+	}
+
+	public openQrCode(product: string, price: number) {
+		this.dialog.open(QrCodeDialog, {
+			data: { product, price }
 		});
 	}
 }

@@ -8,7 +8,7 @@
 					<div class="container">
 						<p class="title"> {{ item.name }} </p>
 						<p class="price"> R$ {{ item.price }} </p>
-						<button>Presentear</button>
+						<button (click)="openQrCode(item.name, item.price)">Presentear</button>
 					</div>
 				</div>
 			</li>
