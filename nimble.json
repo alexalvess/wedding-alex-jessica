@@ -1,0 +1,16 @@
+{
+    "pre-render": {
+        "enabled": true,
+        "routes": [
+			"/",
+			"second",
+			"third"
+        ]
+    },
+    "vendors": {
+        "js": [],
+        "css": [
+            "src/style.scss"
+        ]
+    }
+}

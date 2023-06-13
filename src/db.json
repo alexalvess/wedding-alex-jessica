@@ -1,0 +1,49 @@
+{
+    "gifts": [
+        {
+            "category": "Eletrodomésticos",
+            "products": [
+                {
+                    "image": "assets/img/gifts/fritadeira.png",
+                    "name": "Fritadeira",
+                    "price": 349
+                },
+                {
+                    "image": "assets/img/gifts/fritadeira.png",
+                    "name": "Fritadeira",
+                    "price": 349
+                },
+                {
+                    "image": "assets/img/gifts/fritadeira.png",
+                    "name": "Fritadeira",
+                    "price": 349
+                },
+                {
+                    "image": "assets/img/gifts/fritadeira.png",
+                    "name": "Fritadeira",
+                    "price": 349
+                },
+                {
+                    "image": "assets/img/gifts/fritadeira.png",
+                    "name": "Fritadeira",
+                    "price": 349
+                },
+                {
+                    "image": "assets/img/gifts/fritadeira.png",
+                    "name": "Fritadeira",
+                    "price": 349
+                }
+            ]
+        },
+        {
+            "category": "Utilidades",
+            "products": [
+                {
+                    "image": "assets/img/gifts/fritadeira.png",
+                    "name": "Fritadeira",
+                    "price": 349
+                }
+            ]
+        }
+    ]
+}
