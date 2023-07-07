@@ -7,11 +7,15 @@ export const ROUTES: RouteBase[] = [
 		children: [
 			{
 				path: '',
-				page: () => import('./pages/first/first.page').then(x => x.FirstPage)
+				page: () => import('./pages/honeymoon/honeymoon.page').then(x => x.HoneymoonPage)
 			},
 			{
-				path: 'second',
-				page: () => import('./pages/second/second.page').then(x => x.SecondPage)
+				path: 'honeymoon',
+				page: () => import('./pages/honeymoon/honeymoon.page').then(x => x.HoneymoonPage)
+			},
+			{
+				path: 'eletro',
+				page: () => import('./pages/eletro/eletro.page').then(x => x.EletroPage)
 			},
 			{
 				path: 'third',

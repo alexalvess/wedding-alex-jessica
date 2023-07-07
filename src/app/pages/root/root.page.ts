@@ -10,8 +10,8 @@ export class RootPage extends Page {
 
     public loading = false;
     public menuItems = [
-        { text: '✈️ Para a Lua de Mel', path: '' },
-        { text: '📺 Eletrodomésticos', path: 'second' },
+        { text: '✈️ Para a Lua de Mel', path: 'honeymoon' },
+        { text: '📺 Eletrodomésticos', path: 'eletro' },
         { text: '🏠 Utilidades', path: 'third' },
         { text: '🛏️ Cama, Mesa e Banho', path: 'third' }
     ];

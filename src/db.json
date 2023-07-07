@@ -44,6 +44,46 @@
                     "price": 349
                 }
             ]
+        },
+        {
+            "category": "Eletro",
+            "products": [
+                {
+                    "image": "assets/img/gifts/fritadeira.png",
+                    "name": "Cafeteira Capsula",
+                    "price": 349
+                },
+                {
+                    "image": "assets/img/gifts/fritadeira.png",
+                    "name": "Sanduicheira",
+                    "price": 349
+                },
+                {
+                    "image": "assets/img/gifts/fritadeira.png",
+                    "name": "Processador de alimentos",
+                    "price": 349
+                },
+                {
+                    "image": "assets/img/gifts/fritadeira.png",
+                    "name": "Espremedor de frutas",
+                    "price": 349
+                },
+                {
+                    "image": "assets/img/gifts/fritadeira.png",
+                    "name": "Ferro de passar a vapor",
+                    "price": 349
+                },
+                {
+                    "image": "assets/img/gifts/fritadeira.png",
+                    "name": "Panela elétrica",
+                    "price": 349
+                },
+                {
+                    "image": "assets/img/gifts/fritadeira.png",
+                    "name": "Ar condicionado quente/frio",
+                    "price": 349
+                }
+            ]
         }
     ]
 }
