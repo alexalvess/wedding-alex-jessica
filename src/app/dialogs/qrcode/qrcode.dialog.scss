@@ -3,4 +3,19 @@
 .qrcode-dialog {
     padding: 15px;
     text-align: center;
+
+    > p {
+        font-size: large;
+        color: #f79502;
+        font-weight: bolder;
+    }
+}
+
+.information {
+    margin-top: 50px;
+
+    > p {
+        text-align: left;
+        font-size: small;
+    }
 }

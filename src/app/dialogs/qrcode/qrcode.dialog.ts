@@ -9,6 +9,11 @@ export class QrCodeDialog extends Dialog {
     public showQrCode: boolean = false;
     public qrcode: string;
 
+    public Currency = new Intl.NumberFormat('pt-BR', {
+		style: 'currency',
+		currency: 'BRL',
+	});
+
     constructor(
         @Inject(DIALOG_REF) public dialogRef: DialogRef<QrCodeDialog>,
         private pixService: PixService) {
@@ -16,7 +21,7 @@ export class QrCodeDialog extends Dialog {
     }
 
     async onOpen() {
-        this.qrcode = await this.pixService.generateQrCode(this.dialogRef.data.product, this.dialogRef.data.price);
+        this.qrcode = await this.pixService.generateQrCode(this.dialogRef.data.category, this.dialogRef.data.value);
         this.render(() => this.showQrCode = true);
     }
 }

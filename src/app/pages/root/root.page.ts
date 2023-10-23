@@ -9,12 +9,6 @@ export class RootPage extends Page {
     public get routePath() { return Router.currentPath; }
 
     public loading = false;
-    public menuItems = [
-        { text: '✈️ Para a Lua de Mel', path: '' },
-        { text: '📺 Eletrodomésticos', path: 'second' },
-        { text: '🏠 Utilidades', path: 'third' },
-        { text: '🛏️ Cama, Mesa e Banho', path: 'third' }
-    ];
 
     private cancelListeners: (() => void)[] = [];
 

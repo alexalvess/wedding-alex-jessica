@@ -1,18 +1,41 @@
-<div  class="first-page">
+<div class="first-page">
 	<div class="page-content">
-		
-		<ul>
-			<li @for="item of items">
-				<div class="card" >
-					<img [src]="(item.image)">
-					<div class="container">
-						<p class="title"> {{ item.name }} </p>
-						<p class="price"> R$ {{ item.price }} </p>
-						<button (click)="openQrCode(item.name, item.price)">Presentear</button>
+		<div class="container">
+			<div class="up_note">
+				<p>Como deseja nos Presentear?</p>
+			</div>
+
+			<div class="drop-down">
+				<div (click)="toggleCategoryShow()">
+					<span [class]="{ 'selected': dropDownCategory.selected }">
+						{{dropDownCategory.selected ? dropDownCategory.selected.title : '🙂 Escolha uma Categoria'}}
+					</span>
+				</div>
+				<ul @if="dropDownCategory.show">
+					<li @for="item of dropDownCategory.items" (click)="selectCategoryItem(item)"
+						[class]="{ 'selected': dropDownCategory.selected === item }">
+						{{item.title}}
+					</li>
+				</ul>
+			</div>
+
+			<br />
+
+			<div @if="showValue">
+				<div class="range-value">
+					<button (click)="decrease()">-</button>
+					<button (click)="increase()">+</button>
+					<div class="line-bar">
+						<div [style]="{ 'width': (rangeValue.currentValue/rangeValue.match + '%') }">
+							<p>{{ Currency.format(rangeValue.currentValue) }}</p>
+						</div>
 					</div>
 				</div>
-			</li>
-		</ul>
-		
+
+				<br />
+
+				<button (click)="openQrCode()">Presentear</button>
+			</div>
+		</div>
 	</div>
 </div>
