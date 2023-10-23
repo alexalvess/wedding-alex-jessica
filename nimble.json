@@ -3,7 +3,8 @@
         "enabled": true,
         "routes": [
 			"/",
-			"second",
+            "honeymoon",
+			"eletro",
 			"third"
         ]
     },

@@ -1,0 +1,18 @@
+<div  class="honeymoon-page">
+	<div class="page-content">
+		
+		<ul>
+			<li @for="item of items">
+				<div class="card" >
+					<img [src]="(item.image)">
+					<div class="container">
+						<p class="title"> {{ item.name }} </p>
+						<p class="price"> R$ {{ item.price }} </p>
+						<button (click)="openQrCode(item.name, item.price)">Presentear</button>
+					</div>
+				</div>
+			</li>
+		</ul>
+		
+	</div>
+</div>

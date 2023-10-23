@@ -1,6 +1,15 @@
 # Nimble Project
 This project was generated with Nimble CLI version 1.4.2.
 
+# References
+https://github.com/ericferreira1992/nimble
+https://ericferreira1992.github.io/nimble-page/ 
+
+# Setup
+npm i
+npm i @nimble-ts/cli -g (to 'nb' commands)
+
+
 ## Development server
 Run `nb serve` for a dev server. Navigate to `http://localhost:8090/`. The app will automatically reload if you change any of the source files.
 
