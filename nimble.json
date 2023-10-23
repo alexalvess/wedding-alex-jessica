@@ -2,10 +2,7 @@
     "pre-render": {
         "enabled": true,
         "routes": [
-			"/",
-            "honeymoon",
-			"eletro",
-			"third"
+			"presente"
         ]
     },
     "vendors": {
