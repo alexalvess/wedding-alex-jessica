@@ -2,7 +2,7 @@ import { RouteBase } from '@nimble-ts/core/route';
 
 export const ROUTES: RouteBase[] = [
 	{
-		path: '/presente',
+		path: '/',
 		page: () => import('./pages/root/root.page').then(x => x.RootPage),
 		children: [
 			{

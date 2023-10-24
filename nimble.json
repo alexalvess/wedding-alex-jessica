@@ -2,7 +2,7 @@
     "pre-render": {
         "enabled": true,
         "routes": [
-			"presente"
+			"/"
         ]
     },
     "vendors": {
