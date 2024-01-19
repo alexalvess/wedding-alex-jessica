@@ -24,9 +24,15 @@ export class FirstPage extends Page {
 		currency: 'BRL',
 	});
 
-    constructor(private dialog: DialogBuilder) {
+	public photos = [1,2,3,4,5,6,7,8,9,10,11,12];
+	public album: { number: number }[];
+
+	constructor(private dialog: DialogBuilder) {
         super();
 		this.dropDownCategory.items = db.gifts;
+		this.album = [1,2,3,4].map(x => this.photos.map(y => ({
+			number: y,	
+		}))).flatMap(x => x);
 	}
 
 	onInit(): void {
@@ -35,7 +41,6 @@ export class FirstPage extends Page {
 	public toggleCategoryShow() {
 		this.render(() => {
 			this.dropDownCategory.show = !this.dropDownCategory.show;
-			this.showValue = !this.showValue && this.dropDownCategory.selected;
 		});
 	}
 

@@ -1,7 +1,14 @@
+<div class="images-background">
+	<img @for="let photo of album" [src]="'assets/img/photos/' + photo.number + '.jpg'" alt=""/>
+</div>
 <div class="first-page">
 	<div class="page-content">
 		<div class="container">
-			<div class="up_note">
+			<div class="up-title">
+				Jéssica <span>&</span> Alex
+			</div>
+
+			<div class="up-note">
 				<p>Como deseja nos Presentear?</p>
 			</div>
 
@@ -24,12 +31,14 @@
 			<div @if="showValue">
 				<div class="range-value">
 					<button (click)="decrease()">-</button>
-					<button (click)="increase()">+</button>
 					<div class="line-bar">
 						<div [style]="{ 'width': (rangeValue.currentValue/rangeValue.match + '%') }">
 							<p>{{ Currency.format(rangeValue.currentValue) }}</p>
 						</div>
+						<div [style]="{ 'width': 100 - (rangeValue.currentValue/rangeValue.match) + '%' }">
+						</div>
 					</div>
+					<button (click)="increase()">+</button>
 				</div>
 
 				<br />
