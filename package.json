@@ -3,7 +3,7 @@
     "version": "1.0.0",
     "scripts": {
         "start": "nb serve",
-        "build": "nb build",
+        "build": "nb build --baseHref=/wedding-alex-jessica/",
         "serve": "nb serve --env=local",
         "serve:dev": "nb serve --env=dev",
         "serve:prod": "nb serve --env=prod",
