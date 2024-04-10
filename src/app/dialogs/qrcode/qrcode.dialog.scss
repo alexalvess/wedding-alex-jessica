@@ -1,20 +1,73 @@
 @import 'src/scss/variables';
+@import "toastify-js/src/toastify.css";
 
 .qrcode-dialog {
     padding: 15px;
     text-align: center;
 
-    > p {
+    >p {
         font-size: large;
         color: #f79502;
         font-weight: bolder;
     }
 }
 
-.information {
-    margin-top: 50px;
+.pixPayload {
+    margin-top: 30px;
 
-    > p {
+    >p {
+        margin: 3px;
+        text-align: left;
+        font-size: medium;
+        color: #00691a;
+        font-weight: bold;
+    }
+
+    input {
+        background: #FFF;
+        box-shadow: 2px 2px 5px rgba(#000, .25);
+        border: none;
+        border-radius: 5px;
+        height: 46px;
+        padding: 0 12px;
+        color: #777;
+        width: 100%;
+        width: 100%;
+        outline: 0;
+        font-size: 16px;
+    }
+
+    button {
+        outline: 0;
+        margin-top: 10px;
+        cursor: pointer;
+        background: #f79502;
+        border-radius: 20px;
+        height: 40px;
+        width: 100%;
+        padding: 0 15px;
+        font-size: 18px;
+        font-weight: bold;
+        border: 2px solid #f79502;
+        color: #FFF;
+    }
+
+    button:hover {
+        background-color: #e67e22;
+        border-color: #e67e22;
+    }
+
+    button:active {
+        background-color: #d35400;
+        border-color: #d35400;
+        transform: translateY(2px);
+    }
+}
+
+.information {
+    margin-top: 30px;
+
+    >p {
         text-align: left;
         font-size: small;
     }

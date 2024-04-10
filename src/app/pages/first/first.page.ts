@@ -19,6 +19,8 @@ export class FirstPage extends Page {
 		items: []
 	}
 
+	
+
 	public Currency = new Intl.NumberFormat('pt-BR', {
 		style: 'currency',
 		currency: 'BRL',
@@ -74,9 +76,6 @@ export class FirstPage extends Page {
 	public openQrCode() {
 		const category = this.dropDownCategory.selected['title'];
 		const value = this.rangeValue.currentValue;
-
-		console.log(category);
-		console.log(value);
 
 		this.dialog.open(QrCodeDialog, {
 			data: { category, value }

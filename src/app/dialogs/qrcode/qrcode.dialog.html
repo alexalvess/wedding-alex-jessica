@@ -5,6 +5,13 @@
 
     <p>Valor: {{ Currency.format(dialogRef.data.value)}}</p>
 
+    <div @if="showQrCode" class="pixPayload">
+        <p>PIX Copia e Cola:</p>
+        <input type="text" value="{{payload}}" disabled="true"/>
+
+        <button (click)="copyToClipboard('teste 123')">Copiar</button>
+    </div>
+
     <div class="information">
         <p><b>BENEFICIÁRIO:</b> ALEX ALVES SILVA <br/>
            <b>INSTITUIÇÃO:</b> NU PAGAMENTOS <br/>
