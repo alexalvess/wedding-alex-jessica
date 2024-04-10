@@ -5,7 +5,7 @@
 	"short_name": "NimbleDemoPage",
 	"icons": [
 		{
-			"src": "/assets/img/icon_100x100.png",
+			"src": "/assets/img/logo.png",
 			"sizes": "100x100",
 			"type": "image/png"
 		}
