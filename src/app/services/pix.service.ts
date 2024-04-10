@@ -12,7 +12,6 @@ export class PixService {
             name: 'Alex Alves Silva',
             city: 'Belo Horizonte',
             message: `Envio de presente de casamento: ${product}`,
-            cep: '31340220',
             value: price
         });
 
